@@ -1,0 +1,211 @@
+/*@import "core/variables";
+@import "core/reset";
+@import "components/code";
+@import "components/links";
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/index";*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.intro {
+  background-color: black;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+}
+.logo {
+  width: 150px;
+  display: inline-block;
+}
+.menu {
+  list-style: none;
+  display: none;
+}
+
+.menu_item {
+  display: inline-block;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0 10px;
+  color: white;
+}
+.footer {
+  background-color: black;
+  font-size: 14px;
+  color: gray;
+  padding: 40px 20px 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu_footer {
+  display: inline-block;
+}
+.link_footer {
+  color: gray;
+  text-decoration: none;
+  margin: 6px;
+}
+
+.menu_item_footer {
+  color: gray;
+  text-decoration: none;
+  display: inline-block;
+}
+.texto_der {
+  text-align: right;
+}
+.bandera {
+  width: 20px;
+}
+.texto_espana {
+  margin-bottom: 10px;
+}
+
+.section_imagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: cornflowerblue;
+  width: 100%;
+
+  color: white;
+}
+
+.titulo_principal {
+  font-size: 3rem;
+  margin-top: 8rem;
+}
+
+.titulo_secundario {
+  font-size: 1.5rem;
+  margin: 1.25rem 0;
+}
+
+.boton {
+  background-color: limegreen;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  margin: 1.25rem 0;
+  border-radius: 40px;
+}
+
+.letra_peq {
+  font-size: 0.7rem;
+
+  margin: 1.25rem 0;
+}
+
+.titulo_premium {
+  font-size: 45px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin: 0 0 60px 0;
+  text-align: center;
+}
+
+.condiciones {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  padding: 60px 0 60px 0;
+}
+.icono {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.img_beneficts {
+  width: 25%;
+}
+.subtitulos {
+  width: 100%;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.condiciones-tex {
+  padding: 25px;
+}
+
+.texto-fot {
+  max-width: 250px;
+  display: flex;
+}
+.burguer {
+  width: 40px;
+}
+
+.condiciones_todas {
+  display: flex;
+}
+
+@media all and (min-width: 480px) {
+  .burguer {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+    justify-content: space-between;
+  }
+
+  .section_imagen {
+    background-image: url("../images/premium_dancer.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+  .titulo_principal {
+    margin-top: 4rem;
+  }
+  .boton {
+    width: 25%;
+  }
+
+  .condiciones_todas {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+  }
+  .icono {
+    width: 50%;
+  }
+
+  .img_beneficts {
+    width: 80px;
+    height: 80px;
+  }
+
+  .texto-fot {
+    max-width: 90%;
+  }
+}
+
+@media all and (min-width: 1000px) {
+}
