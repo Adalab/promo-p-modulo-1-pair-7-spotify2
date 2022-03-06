@@ -2,67 +2,112 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <title>Spotify</title>
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header class="intro">
+      <img class="logo" src="./assets/images/logo.png" alt="logotipo de spotify" />
+      <img
+        class="burguer"
+        src="./assets/images/menu-icon.png"
+        alt="Menu hamburguesa"
+      />
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
+      <nav class="menu">
+        <ul>
+          <li class="menu_item"><a class="link" href="">Premium</a></li>
+          <li class="menu_item"><a class="link" href="">Ayuda</a></li>
+          <li class="menu_item"><a class="link" href="">Descargar</a></li>
+          <li class="menu_item"><a class="link" href="">Registrarse</a></li>
+          <li class="menu_item">
+            <a class="link" href="">Iniciar sesión</a>
           </li>
         </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
+      </nav>
+    </header>
+
+    <main>
+      <section class="section_imagen">
+          <h1 class="titulo_principal">Prueba Premium gratis 3 meses</h1>
+            <h2 class="titulo_secundario">
+              Escucha millones de canciones sin anuncios, a la carta y sin
+              conexión.
+            </h2>
+            <div class="boton"><p>VER PLANES</p></div>
+            <h6 class="letra_peq">
+              Rigen términos y condiciones. Los 3 meses gratis no están
+              disponibles para usuarios que ya hayan probardo premium.
+            </h6>
+          </div>
+        </section>
+      <section class="condiciones wrapper">
+          <h1 class="titulo_premium">¿Por qué pasarte a premium?</h1>
+          <div class="condiciones_todas">
+            <article class="icono">
+              <img class="img_beneficts" src="./assets/images/benefit-1.png" alt="Beneficio1" />
+              <div class="condiciones-tex">
+                <p class="subtitulos">Descarga música</p>
+                <p>Llévala siempre contigo</p>
+              </div>
+            </article>
+
+            <article class="icono">
+              <img class="img_beneficts" src="./assets/images/benefit-2.png" alt="Beneficio2" />
+              <div class="condiciones-tex">
+                <p class="subtitulos">Sin anuncios</p>
+                <p>Disfruta de música sin interrupciones</p>
+              </div>
+            </article>
+
+            <article class="icono">
+              <img class="img_beneficts" src="./assets/images/benefit-3.png" alt="Beneficio3" />
+              <div class="condiciones-tex">
+                <p class="subtitulos">Escucha lo que quieras</p>
+                <p>Incluso en el móvil</p>
+              </div>
+            </article>
+
+            <article class="icono">
+              <img class="img_beneficts" src="./assets/images/benefit-4.png" alt="Beneficio4" />
+              <div class="condiciones-tex">
+                <p class="subtitulos">Salta todas las canciones que quieras</p>
+                <p>Simplemente dale a siguiente</p>
+              </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="menu_footer">
+        <ul>
+          <li class="menu_item_footer">
+            <a class="link_footer" href="">Legal</a>
+          </li>
+          <li class="menu_item_footer">
+            <a class="link_footer" href="">Cookies</a>
+          </li>
+          <li class="menu_item_footer">
+            <a class="link_footer" href="">Información sobre los anuncios</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="texto_der">
+        <p class="texto_espana">
+          España <img class="bandera" src="./assets/images/es.svg" alt="" />
         </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+        <p>2019 Spotify AB</p>
+      </div>
+    </footer>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
-          </li>
-        </ul>
-      </main>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -1,88 +1,61 @@
-/*@import "core/variables";
-@import "core/reset";
-@import "components/code";
-@import "components/links";
-@import "layout/page";
-@import "layout/header";
-@import "layout/footer";
-@import "pages/index";*/
+/*@import 'core/variables';
+@import 'core/reset';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index';*/
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
 }
 
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Menu superior */
 .intro {
   background-color: black;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
-  padding: 20px;
+  padding: 1.5rem;
 }
+
 .logo {
-  width: 150px;
+  width: 200px;
   display: inline-block;
 }
+
+.burguer {
+  width: 10%;
+}
+
 .menu {
   list-style: none;
   display: none;
 }
 
-.menu_item {
-  display: inline-block;
-}
-
-.link {
-  text-decoration: none;
-  margin: 0 10px;
-  color: white;
-}
-.footer {
-  background-color: black;
-  font-size: 14px;
-  color: gray;
-  padding: 40px 20px 50px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.menu_footer {
-  display: inline-block;
-}
-.link_footer {
-  color: gray;
-  text-decoration: none;
-  margin: 6px;
-}
-
-.menu_item_footer {
-  color: gray;
-  text-decoration: none;
-  display: inline-block;
-}
-.texto_der {
-  text-align: right;
-}
-.bandera {
-  width: 20px;
-}
-.texto_espana {
-  margin-bottom: 10px;
-}
+/*Imagen*/
 
 .section_imagen {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   background-color: cornflowerblue;
   width: 100%;
-
   color: white;
 }
 
@@ -92,7 +65,7 @@
 }
 
 .titulo_secundario {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   margin: 1.25rem 0;
 }
 
@@ -100,112 +73,162 @@
   background-color: limegreen;
   width: 100%;
   display: flex;
-  padding: 10px;
+  padding: 1rem;
   justify-content: center;
   margin: 1.25rem 0;
   border-radius: 40px;
 }
 
 .letra_peq {
-  font-size: 0.7rem;
-
+  font-size: 0.9rem;
   margin: 1.25rem 0;
 }
+/*Condiciones*/
 
 .titulo_premium {
-  font-size: 45px;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  margin: 0 0 60px 0;
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem 0;
   text-align: center;
 }
 
 .condiciones {
   display: flex;
   flex-direction: column;
-
   justify-content: space-around;
-  padding: 60px 0 60px 0;
+  padding: 3rem 0;
 }
 .icono {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+
+  padding: 0.5rem;
+
+  align-items: left;
 }
 
 .img_beneficts {
   width: 25%;
+  height: 25%;
+  margin: 0 1rem;
 }
+
 .subtitulos {
   width: 100%;
-
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 1.5;
-}
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.condiciones-tex {
-  padding: 25px;
-}
-
-.texto-fot {
-  max-width: 250px;
-  display: flex;
-}
-.burguer {
-  width: 40px;
 }
 
 .condiciones_todas {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 400px;
+}
+.condiciones_text {
+  padding: 1rem;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: black;
+  font-size: 0.9rem;
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 4rem 1rem 1rem 1rem;
+}
+
+.menu_footer {
+  display: inline-block;
+  max-width: 50%;
+}
+.link_footer {
+  color: gray;
+  text-decoration: none;
+  margin: 6px;
+  display: inline-block;
+}
+
+.menu_item_footer {
+  color: gray;
+  text-decoration: none;
+  display: inline-block;
+}
+.texto_der {
+  text-align: right;
+  padding: 0.3rem;
+}
+.bandera {
+  width: 20px;
+}
+.texto_espana {
+  line-height: 2.5;
 }
 
 @media all and (min-width: 480px) {
   .burguer {
     display: none;
   }
+
   .menu {
     display: inline-block;
-    justify-content: space-between;
+  }
+  .menu_item {
+    display: inline-block;
   }
 
+  .link {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+  }
   .section_imagen {
     background-image: url("../images/premium_dancer.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position-y: center;
+    background-position-x: right;
     background-size: contain;
   }
+
   .titulo_principal {
+    font-size: 4rem;
     margin-top: 4rem;
   }
+
   .boton {
     width: 25%;
+  }
+  .letra_peq {
+    max-width: 80%;
+    font-size: 0.8rem;
   }
 
   .condiciones_todas {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 95%;
   }
   .icono {
     width: 50%;
   }
-
-  .img_beneficts {
-    width: 80px;
-    height: 80px;
-  }
-
-  .texto-fot {
-    max-width: 90%;
-  }
 }
 
 @media all and (min-width: 1000px) {
+  .condiciones_todas {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  .icono {
+    display: block;
+  }
+  .img_beneficts {
+    width: 50%;
+    height: 50%;
+    margin: 0 1rem;
+  }
 }
