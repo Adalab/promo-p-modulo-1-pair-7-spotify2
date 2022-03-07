@@ -3,9 +3,10 @@
 @import 'components/code';
 @import 'components/links';
 @import 'layout/page';
-@import 'layout/header';
+
 @import 'layout/footer';
 @import 'pages/index';*/
+@import 'layout/header';
 
 * {
   margin: 0;
@@ -21,32 +22,6 @@
   width: 90%;
   margin: 0 auto;
 }
-
-/* Menu superior */
-.intro {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  padding: 1.5rem;
-}
-
-.logo {
-  width: 200px;
-  display: inline-block;
-}
-
-.burguer {
-  width: 10%;
-}
-
-.menu {
-  list-style: none;
-  display: none;
-}
-
 /*Imagen*/
 
 .section_imagen {
@@ -169,22 +144,7 @@
 }
 
 @media all and (min-width: 480px) {
-  .burguer {
-    display: none;
-  }
-
-  .menu {
-    display: inline-block;
-  }
-  .menu_item {
-    display: inline-block;
-  }
-
-  .link {
-    text-decoration: none;
-    margin: 0 10px;
-    color: white;
-  }
+  
   .section_imagen {
     background-image: url("../images/premium_dancer.png");
     background-repeat: no-repeat;
